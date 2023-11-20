@@ -1,22 +1,20 @@
-package java.day02_driverMethods;
+package day01_seleniumFirstAutomation;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class C03_getMethods {
+public class C01_WebDriverCreation {
     public static void main(String[] args) throws InterruptedException {
 
+        //We set properties of the webdriver
         System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
+
         WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
 
         driver.get("https://testotomasyonu.com");
+        driver.manage().window().maximize();
+        Thread.sleep(3000);
 
-        //System.out.println(driver.getPageSource());
-        System.out.println(driver.getWindowHandle());
-        System.out.println(driver.getWindowHandles());
-
-
-        driver.quit();
+        driver.close();
     }
 }

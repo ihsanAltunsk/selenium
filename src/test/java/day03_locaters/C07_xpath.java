@@ -1,4 +1,4 @@
-package java.day03_locaters;
+package day03_locaters;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -50,7 +50,7 @@ public class C07_xpath {
 
         // 6- Test whether the remove button is not visible.
         try{
-            driver.findElement(By.xpath("//div[@class='container']"));
+            driver.findElement(By.xpath("//button[@class='remove-btn']"));
             System.out.println("Remove button test FAILED");
         }catch (NoSuchElementException e){
             System.out.println("Remove button test PASSED");

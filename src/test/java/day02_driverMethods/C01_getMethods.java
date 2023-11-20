@@ -1,20 +1,23 @@
-package java.day01_seleniumFirstAutomation;
+package day02_driverMethods;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class C01_WebDriverCreation {
+public class C01_getMethods {
     public static void main(String[] args) throws InterruptedException {
 
-        //We set properties of the webdriver
-        System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
 
         driver.get("https://testotomasyonu.com");
-        driver.manage().window().maximize();
+        Thread.sleep(3000);
+
+        driver.get("https://youtube.com");
         Thread.sleep(3000);
 
         driver.close();
     }
+
 }
