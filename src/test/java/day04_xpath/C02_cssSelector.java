@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C02_CssSelector {
+public class C02_cssSelector {
     // 1- Go to the homepage of testotomasyonu.com
     // 2- Click on the electronics link
     // 3- In the sidebar, apply a filter with min 10, max 200 for the price
