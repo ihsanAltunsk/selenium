@@ -1,4 +1,4 @@
-package day03_locaters;
+package day04_xpath;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C07_xpath {
+public class C01_xpath {
     // 1- Go to https://testotomasyonu.com/addremove/.
     // 2- Click on the Add Element button.
     // 3- Test that the Remove button is visible.
